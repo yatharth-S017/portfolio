@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> -->
+   
+
+    <!-- online cdn path for bootstrap icons -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"); -->
+
+
+    <style type="text/css">
+
+
+        /* styling of header section */
+        header{
+            background-color: rgb(42, 49, 116);
+            display: flex;
+            flex-direction: row;
+            margin: -8px;
+            padding: 12px;
+
+        }
+        .tittle{ 
+            padding-left: 30px;
+            padding-top: 20px;
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            margin-right: 250px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        
+        .first{
+            padding-bottom: 10px;
+            color: white;
+            margin-top: -15px;
+            font-size: 20px;
+            
+        }
+
+        .first span{
+           font-style:italic;
+            margin-right: 40px;
+        }
+
+
+
+
+        /* styling of section part */
+        section{
+            display: grid;
+            grid-template-columns: 9fr 3fr;
+            height: 71%
+            
+        }
+
+        .second{
+            background:  grey;
+            color: white;
+            margin-right: -12px;
+           height: 560px;
+           margin-top: 6px;
+        }
+
+        .third{
+            color: lightgray;
+        }
+
+        .image1 img{
+            border-radius: 100px;
+            margin-top:40px ;
+        }
+        .about1{
+            margin-bottom: 30px;
+            font-size: 18px;
+            
+        }
+        .contact1{
+            margin-bottom: 30px;
+            font-size: 17px;
+        }
+        .socialMedia{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .cv{
+            font-size: 45px;
+            size: 60px;
+            color: gray;
+
+        }
+        button{
+            font-size: 20px;
+            font-weight: bold;
+            columns:blue ;
+            width: 150px;
+            height: 40px;
+        }
+
+
+        .third img{
+            margin-top: 8px;
+            margin-left: -10px;
+            
+        }
+
+        .third{
+            color: black;
+            position: relative;
+        }
+        
+        .image-blur{
+            filter: blur(1.5px);
+            
+           
+        }
+        .para1{
+           position: absolute;
+           bottom:0;
+           left: 30;
+           padding-left: 260px;
+           
+           width: 100%;
+           margin-bottom: 340px;
+           
+
+           font-size: 25px;
+           color: rgb(86, 104, 4);
+           font-weight: bold;
+        }
+        .para2{
+            position: absolute;
+           bottom:0;
+           left: 0;
+           width: 100%;
+           text-align: center;
+           padding: 10px;
+           margin-bottom: 270px; 
+
+           font-size: 50px;
+           color: rgb(86, 104, 4);
+           font-weight:bolder;
+        }
+        .para3{
+            position: absolute;
+           bottom:0;
+           left: 0;
+           width: 100%;
+           text-align: center;
+           padding: 10px;
+           margin-bottom: 230px; 
+           padding-left: 10px;
+
+           font-size: 25px;
+           font-variant: small-caps;
+           color: rgb(86, 104, 4);
+           
+        }
+
+
+
+
+
+
+
+        /* styling main part of portfolio */
+        .main2{
+            margin: -8px;
+            margin-top: -24px;
+            padding-left: 150px;
+            padding-top: 50px;
+            background-color: rgb(217, 234, 240);
+            height: 340px;
+        }
+        .about2{
+            font-size: 35px;
+            color: rgb(71, 30, 46);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .about3{
+           margin-top: 10px;
+           font-size: 20px;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .aboutsection{
+            font-size: 18px;
+            color: rgb(77, 67, 44);
+            line-height: 25px;
+            
+        }
+
+
+
+
+        /* styling main part of education */
+        .main3{
+            background-color: rgb(175, 190, 160);
+            margin: -8px;
+            height: 520px;
+
+
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .education1{
+            padding-left: 250px;
+            margin-top: 15px;
+        }
+        .title1{
+            font-size: 40px;
+            font-family:cursive;
+            color: rgb(71, 30, 46);;
+        }
+        .subtitle1{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .year{
+            font-size: 18px;
+            margin-bottom: 5px;   
+        }
+
+        .details{
+            font-family:cursive;
+            color: rgb(26, 32, 87);
+            
+        }
+
+
+        .skills{
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .title2{
+            font-size: 40px;
+            font-family:cursive;
+            color: rgb(71, 30, 46);;
+        }
+        li{
+            padding-bottom: 10px;
+            font-family:cursive;
+        }
+
+
+
+        .title4{
+            font-size: 40px;
+            font-family:cursive;
+            color: rgb(71, 30, 46);;
+        }
+        .subtitle4{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .interest{
+            display:block;
+            columns: 2;
+            column-gap: -150px;
+        }
+        .interest span{
+            display: block;
+            margin-bottom: -5px;
+        }
+
+
+
+
+
+
+
+
+        /* styling footer part of portfolio */
+        footer{
+            background-color: rgb(199, 196, 196);
+            height: 250px;
+            margin: -8px;
+            margin-top: 8px;
+
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .first{
+           padding-top: 40px;
+           padding-left: 100px;
+               
+        }
+        .lastline{
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: rgb(132, 130, 24);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .second1{
+            padding-top: 40px;
+            padding-left: 100px;
+        }
+        .contact{
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: rgb(18, 55, 92);
+        }
+        .cv2{
+            color: rgb(82, 82, 247);
+            background-color: bisque;
+        }
+        
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="tittle">Portfolio</div>
+
+        <div class="first">
+            <span>About</span>
+            <span>Education</span>
+            <span>Skill & Language</span>
+            <span>Interest & Hobbies</span>  
+        </div>
+
+
+    </header>
+
+
+    <section >
+
+
+        <div class="third" >
+           
+                <div>
+                    <img src="https://static.wixstatic.com/media/08fe21_6fc7cb797fc542dc8b4fea9e2cbd85f7~mv2_d_3610_2357_s_2.jpg/v1/fill/w_735,h_760,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/08fe21_6fc7cb797fc542dc8b4fea9e2cbd85f7~mv2_d_3610_2357_s_2.jpg" alt="" height="560" width="101%" class="image-blur">
+                    <p class="para1">HELLO,&nbsp; I'M </p><br>
+                    <p class="para2">YATHARTH SINGH.</p> <br> 
+                    <p class="para3">Tech learner at PW IOI.</p> 
+
+                </div>           
+        </div>
+
+
+
+        <div class="second" align="center">
+
+            <div class="image1">
+                <img src="public/image/myimage1.jpg" alt="" width="200" >
+
+            </div>
+
+            <div class="name1">
+                <h1>Yatharth Singh</h1>
+            </div>
+
+
+            <div class="about1">
+                <p>Tech Learner at PWIOI <br>Undergrad at Manipal University</p>
+            </div>
+
+            <div class="contact1">
+                <div>yatharthsingh239@gmail.com</div>
+                <div>+91-9335910288</div>
+            </div>
+
+            <div class="socialMedia">
+                <span class="bi bi-linkedin" style="color: blue;"></span>
+                <span class="bi bi-twitter-x" style="color: black;"></span>
+            </div>
+
+
+
+            <div class="cv">
+                <button>Download CV</button>
+            </div>
+
+        </div>
+
+        
+    </section>
+
+
+    <main class="main2">
+        <div class="about2">About</div>
+        <div class="about3">MY BACKGROUND</div>
+        <p class="aboutsection">Hello! I am a passionate student at PWIOI, currently honing my technical skills 
+            <br> in web development. With a strong foundation in web technologies, I am committed to creating innovative,
+            <br> user-friendly web solutions. I am constantly learning and exploring new tools and frameworks 
+            <br> to stay ahead in the rapidly evolving tech.  <br>
+            My goal is to take on challenging responsibilities and test my potential in these fields. I am excited to
+            <br> contribute to projects, collaborate with professionals, and continuously grow as a developer and technologist.</p>
+    </main>
+
+    
+
+    <main class="main3">
+
+        <div class="education1">
+
+            <div class="title1">Education</div>
+            <div class="subtitle1">WHAT I'VE LEARNED</div>
+
+            <DIV>
+            <div class="year">2020-2021</div>
+            <div class="details">Class-10th</div>
+            <div class="details">Saraswati Vidya Mandir Senior <br> Secondary School</div>
+            <div class="details" style="margin-bottom: 20px;">Percentage:94.8%</div>
+            </DIV>
+
+
+            <DIV>
+            <div class="year">2022-2023</div>
+            <div class="details">Class-12th</div>
+            <div class="details">Navodaya Vidya Mandir High School <br> And Inter College</div>
+            <div class="details" style="margin-bottom: 20px;">Percentage:78.8%</div>
+             </DIV>
+
+            <DIV>
+            <div class="year">2024-2028</div>
+            <div class="details">Currently Pursuing Technical Skill <br> Program  in PW IOI</div>
+             </DIV>
+
+        </div>
+
+        <div class="skills">
+
+            <div class="div1">
+                <div class="title2">Skills & Language</div>
+            <ul>
+                <li>Java</li>
+                <li>C Language</li>
+                <li>Frontend {HTML & CSS}</li>
+                <li>DSA {Basic Understanding of DSA}</li>
+            </ul>
+            </div>
+
+
+            <div>
+
+                <div class="title4">Interests & Hobbies</div>
+                <div class="subtitle4">Out of College</div>
+                <ul class="interest">
+                    <li>Travel</li>
+                    <li>Movies</li>
+                    <li>Cricket</li>
+                    <li>Problem Solving</li>
+                    <li>Reading Books</li>
+                </ul>
+           </div>
+            
+
+        </div>
+        
+    </main>
+
+    
+
+
+
+
+
+    <!-- footer part of portfolio -->
+     <footer>
+        <div class="first">
+            <div class="lastline">I'd love to hear <br> from you.</div>
+            <div>
+                <span class="bi bi-linkedin" style="color: blue; margin-right:15px;"></span>
+                <span class="bi bi-twitter-x" style="color: black;"></span>
+            </div>
+        </div>
+
+        <div class="second1">
+            <div class="contact">
+                <div>Contact Us</div>
+                <div>Email-yatharthsingh239@gamil.com</div>
+                <div>Mob. - 93935910288</div>
+            </div>
+
+            <div>
+                <button class="cv2">Download CV</button>
+            </div>
+        </div>
+
+     </footer>
+
+</body>
+
+</html>
